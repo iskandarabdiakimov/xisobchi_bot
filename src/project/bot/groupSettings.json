@@ -1,0 +1,19 @@
+{
+  "-1002507567564": {
+    "minMembers": 0,
+    "forceAdd": true,
+    "customText": "",
+    "textTime": 30,
+    "exemptUsers": [],
+    "linkedChannels": []
+  },
+  "-1002571245498": {
+    "minMembers": 1,
+    "forceAdd": true,
+    "customText": "",
+    "textTime": 30,
+    "exemptUsers": [],
+    "linkedChannels": [],
+    "requiredChannel": "ffdsg"
+  }
+}

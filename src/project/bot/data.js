@@ -1,9 +1,7 @@
 const fs = require("fs");
 
-
 let groups = {};
 let groupSettings = {};
-
 
 function loadGroups() {
   try {
@@ -27,7 +25,6 @@ function loadGroupSettings() {
   }
 }
 
-
 function saveGroups() {
   try {
     fs.writeFileSync("groups.json", JSON.stringify(groups, null, 2));
@@ -46,7 +43,6 @@ function saveGroupSettings() {
     console.error("Error saving group settings:", err);
   }
 }
-
 
 function getGroupSettings(chatId) {
   if (!groupSettings[chatId]) {

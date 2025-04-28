@@ -7,7 +7,6 @@ const handlers = require("./handlers");
 const commands = require("./commands");
 const mongodb = require("./mongodb");
 
-
 const token = process.env.TELEGRAM_TOKEN;
 if (!token) {
   console.error("TELEGRAM_TOKEN .env faylda aniqlanmagan!");
@@ -16,14 +15,11 @@ if (!token) {
 
 const bot = new TelegramBot(token, { polling: true });
 
-
 data.loadGroups();
 data.loadGroupSettings();
 
-
 handlers(bot);
 commands(bot);
-
 
 utils.setupCommands(bot);
 
